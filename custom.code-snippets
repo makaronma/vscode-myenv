@@ -1,0 +1,38 @@
+{
+	"useEffect log": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "uselog",
+		"body": [
+      "useEffect(() => {",
+			"  console.log($1);",
+			"}, [$1]);"
+		],
+		"description": "consolelog by useEffect"
+	},
+  "useState snippet": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "uses",
+    "body": [
+      "const [$1, set${1/(.*)/${1:/capitalize}/}] = useState<$2>($3);",
+    ],
+    "description": "generate useState"
+  },
+  "useEffect snippet": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "usee",
+    "body": [
+      "useEffect(() => {",
+      "",
+      "}, []);"
+    ],
+    "description": "generate useEffect"
+  },
+  "export default snippet": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "edd",
+    "body": [
+      "export default $TM_FILENAME_BASE;",
+    ],
+    "description": "generate useState"
+  }
+}

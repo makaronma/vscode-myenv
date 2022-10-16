@@ -1,0 +1,142 @@
+{
+  "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  // Causes the debug view to automatically appear when a breakpoint is hit. This
+  // setting is global and not configurable per-language.
+  "debug.openDebug": "openOnDebugBreak",
+  "[rust]": {
+    // "editor.defaultFormatter": "rust-lang.rust", // Makes the magic
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "rust-lang.rust-analyzer", // Optional
+  },
+  "rust-analyzer.inlayHints.parameterHints": false,
+  "[dart]": {
+      // Automatically format code on save and during typing of certain characters
+      // (like `;` and `}`).
+      "editor.formatOnSave": true,
+      "editor.formatOnType": true,
+      // Draw a guide line at 80 characters, where Dart's formatting will wrap code.
+      // "editor.rulers": [80],
+      // Disables built-in highlighting of words that match your selection. Without
+      // this, all instances of the selected text will be highlighted, interfering
+      // with Dart's ability to highlight only exact references to the selected variable.
+      "editor.selectionHighlight": false,
+      // By default, VS Code prevents code completion from popping open when in
+      // "snippet mode" (editing placeholders in inserted code). Setting this option
+      // to `false` stops that and allows completion to open as normal, as if you
+      // weren't in a snippet placeholder.
+      "editor.suggest.snippetsPreventQuickSuggestions": false,
+      // By default, VS Code will pre-select the most recently used item from code
+      // completion. This is usually not the most relevant item.
+      //
+      // "first" will always select top item
+      // "recentlyUsedByPrefix" will filter the recently used items based on the
+      //     text immediately preceding where completion was invoked.
+      "editor.suggestSelection": "first",
+      // Allows pressing <TAB> to complete snippets such as `for` even when the
+      // completion list is not visible.
+      "editor.tabCompletion": "onlySnippets",
+      // By default, VS Code will populate code completion with words found in the
+      // current file when a language service does not provide its own completions.
+      // This results in code completion suggesting words when editing comments and
+      // strings. This setting will prevent that.
+      "editor.wordBasedSuggestions": false,
+  },
+  "editor.minimap.enabled": false,
+  "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "emeraldwalk.runonsave": {
+      "commands": [
+          {
+              "match": "myBasicThree.js$",
+              "cmd": "npm run build"
+          },
+      ]
+  },
+  "errorLens.delay": 1500,
+  "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "tailwindCSS.includeLanguages": {
+      "html": "html",
+      "javascript": "javascript",
+      "css": "css",
+      "plaintext": "typescript"
+  },
+  "editor.quickSuggestions": {
+      "strings": true
+  },
+  "tailwindCSS.emmetCompletions": true,
+
+  // The number of spaces a tab is equal to. This setting is overridden
+  // based on the file contents when `editor.detectIndentation` is true.
+  "editor.tabSize": 2,
+
+  // Insert spaces when pressing Tab. This setting is overriden
+  // based on the file contents when `editor.detectIndentation` is true.
+  "editor.insertSpaces": true,
+
+  // When opening a file, `editor.tabSize` and `editor.insertSpaces`
+  // will be detected based on the file contents. Set to false to keep
+  // the values you've explicitly set, above.
+  "editor.detectIndentation": false,
+
+  "workbench.colorCustomizations": {
+    // "editorWarning.foreground": "#8f8f6b",
+    "editorInfo.foreground": "#979797"
+  },
+  "dart.flutterHotReloadOnSave": "all",
+  "dart.hotReloadOnSave": "all",
+  "dart.previewHotReloadOnSaveWatcher": true,
+  "cmake.configureOnOpen": false,
+  "thunder-client.codeSnippetLanguage": "cs-httpclient",
+  "vsicons.presets.nestjs": true,
+  "vsicons.projectDetection.autoReload": true,
+  "vsicons.presets.tsOfficial": true,
+  "material-icon-theme.activeIconPack": "nest",
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": false,
+  "gitlens.hovers.enabled": false,
+  "editor.linkedEditing": true,
+  "css.lint.duplicateProperties": "warning",
+  "scss.lint.duplicateProperties": "warning",
+  "npm.keybindingsChangedWarningShown": true,
+  "tabnine.experimentalAutoImports": true,
+  "editor.acceptSuggestionOnEnter": "off",
+  "workbench.iconTheme": "material-icon-theme",
+
+  // https://github.com/antfu/vscode-file-nesting-config
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    ".env": ".env.*",
+    ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .mailmap, .git-blame*",
+    "next.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, next-env.d.ts, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "app.json": "eas.json, babel.config.js, .babelrc*, metro.config.js, .svgrrc",
+    ".prettierrc": ".prettierrc, .prettierignore",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": ".node-version, .nodemon*, .npm*, package-lock.json, package.nls*.json, yarn*",
+    "readme*": "authors, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors, copying, credits, governance.md, history.md, license*, maintainers, readme*, security.md, sponsors*",
+    "jest.config.*": "jest*"
+  },
+  "window.zoomLevel": 2,
+  "workbench.colorTheme": "Solarized Light+",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.hover.sticky": false,
+  "redhat.telemetry.enabled": false,
+  "dashboard.projectData": null,
+  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_",
+}
