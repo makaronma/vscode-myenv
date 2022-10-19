@@ -39,11 +39,14 @@
     "jest.config.*": "jest*"
   },
   "highlight.regexes": {
-    "(use\\w*\\(\\))": {
+    "(use\\w+\\()": {
       "decorations": [
         {
-          "backgroundColor": "#e4bf1b",
+          "backgroundColor": "#ead368",
           "color": "#0E1318"
+          // "borderWidth":"1px",
+          // "borderColor":"#e4bf1b",
+          // "borderStyle":"solid"
         }
       ]
     }
