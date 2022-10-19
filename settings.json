@@ -18,12 +18,12 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  
+
   // Dynamic
   "workbench.colorTheme": "Solarized Light+",
   "window.zoomLevel": 2,
   "editor.tabSize": 2,
-  
+
   // https://github.com/antfu/vscode-file-nesting-config
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
@@ -38,4 +38,14 @@
     "readme*": "authors, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors, copying, credits, governance.md, history.md, license*, maintainers, readme*, security.md, sponsors*",
     "jest.config.*": "jest*"
   },
+  "highlight.regexes": {
+    "(use\\w*\\(\\))": {
+      "decorations": [
+        {
+          "backgroundColor": "#e4bf1b",
+          "color": "#0E1318"
+        }
+      ]
+    }
+  }
 }
