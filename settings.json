@@ -42,7 +42,7 @@
     "(use\\w+\\()": {
       "decorations": [
         {
-          "backgroundColor": "#ead368",
+          "backgroundColor": "#f1e7b5",
           "color": "#0E1318"
           // "borderWidth":"1px",
           // "borderColor":"#e4bf1b",
