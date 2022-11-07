@@ -20,8 +20,7 @@
   },
 
   // Dynamic
-  "workbench.colorTheme": "Solarized Light+",
-  "window.zoomLevel": 2,
+  "workbench.colorTheme": "Better Solarized Dark",
   "editor.tabSize": 2,
 
   // https://github.com/antfu/vscode-file-nesting-config
@@ -34,14 +33,15 @@
     "app.json": "eas.json, babel.config.js, .babelrc*, metro.config.js, .svgrrc",
     ".prettierrc": ".prettierrc, .prettierignore",
     "tsconfig.json": "tsconfig.*.json",
-    "package.json": ".node-version, .nodemon*, .npm*, package-lock.json, package.nls*.json, yarn*",
+    "package.json": ".node-version, .nodemon*, .npm*, package-lock.json, package.nls*.json, yarn*, pnpm-lock.yaml",
     "readme*": "authors, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors, copying, credits, governance.md, history.md, license*, maintainers, readme*, security.md, sponsors*",
     "jest.config.*": "jest*"
   },
   "highlight.regexes": {
-    "(use\\w+\\()": {
+    "(use\\w+(\\(|<))": {
       "decorations": [
         {
+          // "fontWeight": "550",
           "backgroundColor": "#f1e7b5",
           "color": "#0E1318"
           // "borderWidth":"1px",
@@ -49,6 +49,28 @@
           // "borderStyle":"solid"
         }
       ]
+    },
+    "(console.log)": {
+      "decorations": [
+        {
+          // "backgroundColor": "",
+          // "color": "#0E1318"
+          "borderWidth": "2px",
+          "borderColor": "#e4bf1b",
+          "borderStyle": "solid"
+        }
+      ]
     }
-  }
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": 2,
+  "workbench.layoutControl.enabled": false
 }
